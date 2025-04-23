@@ -216,7 +216,7 @@ date_default_timezone_set('Asia/Ho_Chi_Minh');
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Nhân viên: <?php echo $_SESSION['user']['HoTen']?></span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Nhân viên: <?php echo  $_SESSION['user']['HoTen'] ?? 'Khách'?></span>
                                 <img class="img-profile rounded-circle"
                                     src="asset/img/undraw_profile.svg">
                             </a>

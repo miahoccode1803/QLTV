@@ -61,7 +61,7 @@
 
         public static function getDS($MaDS){
             $db = Database::getInstance();
-            $sql = "SELECT * FROM `DauSach`,`TheLLoai` WHERE DauSach.MaTL = TheLLoai.MaTL AND DauSach.MaDS = '$MaDS'";
+            $sql = "SELECT * FROM `DauSach`,`TheLoai` WHERE DauSach.MaTL = TheLoai.MaTL AND DauSach.MaDS = '$MaDS'";
 
             $result = $db->getDatas($sql);
             while($row = $result->fetch()){
@@ -72,7 +72,7 @@
 
         public static function getDSs(){
             $db = Database::getInstance();
-            $sql = "SELECT * FROM `DauSach`,`theloai` WHERE DauSach.MaTL = theloai.MaTL";
+            $sql = "SELECT * FROM `DauSach`,`TheLoai` WHERE DauSach.MaTL = TheLoai.MaTL";
 
             $result = $db->getDatas($sql);
             $sds = [];
